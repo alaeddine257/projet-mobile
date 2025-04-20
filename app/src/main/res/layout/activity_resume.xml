@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".activities.ResumeActivity">
+
+    <ImageView
+        android:id="@+id/devImage"
+        android:layout_width="130dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/image_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/portrait" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skillsText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/devSkillTextView1"
+                style="@style/skillStyle"
+                android:text="@string/dev_skill1" />
+
+            <TextView
+                android:id="@+id/devSkillTextView2"
+                style="@style/skillStyle"
+                android:text="@string/dev_skill2" />
+
+            <TextView
+                android:id="@+id/devSkillTextView3"
+                style="@style/skillStyle"
+                android:text="C++" />
+
+            <TextView
+                android:id="@+id/devSkillTextView4"
+                style="@style/skillStyle"
+                android:text="HTML 5" />
+
+            <TextView
+                android:id="@+id/devSkillTextView5"
+                style="@style/skillStyle"
+                android:text="CSS 3" />
+
+            <TextView
+                android:id="@+id/devSkillTextView6"
+                style="@style/skillStyle"
+                android:text="JavaScript" />
+
+            <TextView
+                android:id="@+id/devSkillTextView7"
+                style="@style/skillStyle"
+                android:text="@string/dev_skill7" />
+
+            <TextView
+                android:id="@+id/devSkillTextView8"
+                style="@style/skillStyle"
+                android:text="Adobe Illustrator" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/skillsText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:text="@string/knowledgeBaseText"
+        android:textColor="@color/titleColor"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/devImage" />
+
+    <TextView
+        android:id="@+id/devDegreeTextView"
+        style="@style/devDetailStyle"
+        android:text="Developper"
+        app:layout_constraintStart_toEndOf="@+id/devImage"
+        app:layout_constraintTop_toBottomOf="@+id/devTextView" />
+
+    <TextView
+        android:id="@+id/devUniversityPlaceTextView"
+        style="@style/devDetailStyle"
+        android:text="Designer"
+        app:layout_constraintStart_toEndOf="@+id/devImage"
+        app:layout_constraintTop_toBottomOf="@+id/devDegreeTextView" />
+
+    <TextView
+        android:id="@+id/devTextView"
+        style="@style/devDetailStyle"
+        android:text="AlaEddine Dammak"
+        app:layout_constraintStart_toEndOf="@+id/devImage"
+        app:layout_constraintTop_toTopOf="@+id/devImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
